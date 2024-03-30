@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <h2 id="subtitle">
+        Pre-work Assignment: Weather API (Open-Meteo) by: Habib
+      </h2>
+
+      <div class="input-container">
+        <label for="cityInput">City:</label>
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button id="searchButton" onclick="search()">Search</button>
+        <button id="clearButton">Clear</button>
+      </div>
+
+      <div class="forecast-summary-container">
+        <h2>Today's Forecast Summary:</h2>
+        <div id="summary" class="forecast-summary"></div>
+      </div>
+
+      <div class="detailed-forecast-container">
+        <h2>Detailed Forecast:</h2>
+        <button
+          id="detailedForecastButton"
+          onclick="showDetailedForecast()"
+          disabled
+        >
+          Show Detailed Forecast
+        </button>
+        <div id="detailedForecast" class="detailed-forecast"></div>
+      </div>
+    </div>
+    <a id="how-to-use"><a href="how-to-use.html">How to use</a>
+    <script src="weather.js"></script>
+  </body>
+</html>
